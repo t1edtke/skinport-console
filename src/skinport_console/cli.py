@@ -4,7 +4,7 @@ import inquirer
 import skinport
 
 
-async def main():
+async def cli():
     while True:
         endpoint = inquirer.list_input(
             'What do you want to do?',
@@ -88,5 +88,5 @@ async def main():
             break
 
 
-if __name__ == '__main__':
-    asyncio.run(main())
+def main():
+    asyncio.run(cli())
